@@ -1,0 +1,83 @@
+canvas {
+   background-color: #130c2a;
+}
+.game-canvas {
+    border: 2px solid #9fff94; /* Color del borde */
+    box-shadow: 0 0 10px #9bff94; /* Efecto de resplandor */
+    animation: changeColorBorde 10s infinite alternate;
+}
+body {
+    background-color: #111111; /* Cambia el color de fondo a negro (#000) o el color que desees */
+    margin: 0; /* Establece el margen en 0 para que el color de fondo cubra toda la página */
+}
+h1 {
+    margin: 0px;
+    margin-bottom: 10px;
+    font-size: 5.9em;
+    font-family: "fuentePixel";
+    animation: changeColor 10s infinite alternate; /* Animación para cambiar el color */
+
+}
+@keyframes changeColor {
+    0% {
+        color: #dccbff; /* Color inicial */
+        text-shadow: 0px 1px 10px rgb(115, 21, 255);
+    }
+    25% {
+        color: #dccbff; /* Color inicial */
+        text-shadow: 0px 1px 25px rgb(115, 21, 255);
+
+    }
+    50% {
+        color: #d0ffcb;
+        text-shadow: 0px 1px 10px rgb(37, 255, 21);
+    }
+    75% {
+        color: #d0ffcb;
+        text-shadow: 0px 1px 25px rgb(64, 255, 21);
+    }
+    100% {
+        color: #dccbff; /* Color inicial */
+        text-shadow: 0px 1px 10px rgb(115, 21, 255);
+    }
+}
+@keyframes changeColorBorde {
+    0% {
+        border: 2px solid #dccbff; /* Color del borde */
+        box-shadow: 0 0 10px #7315FFFF; /* Efecto de resplandor */
+    }
+    25% {
+        border: 2px solid #dccbff; /* Color del borde */
+        box-shadow: 0 0 10px #7315FFFF;
+
+    }
+    50% {
+        border: 2px solid #9fff94; /* Color del borde */
+        box-shadow: 0 0 10px #9bff94; /* Efecto de resplandor */
+    }
+    75% {
+        border: 2px solid #9fff94; /* Color del borde */
+        box-shadow: 0 0 10px #9bff94; /* Efecto de resplandor */
+    }
+    100% {
+        border: 2px solid #dccbff; /* Color del borde */
+        box-shadow: 0 0 10px #7315FFFF;
+    }
+}
+
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px;
+    margin: 0px;
+    color: #cbf9ff; /* Cambio de color a morado */
+    height: 100vh;
+
+}
+@font-face {
+    font-family: 'fuentePixel';
+    src: url('fonts/PixelifySans-Regular.ttf') format('truetype');
+
+}
+
